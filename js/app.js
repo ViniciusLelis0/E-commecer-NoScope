@@ -125,11 +125,11 @@ if (menuButton) {
 
 /* ===== Dados de exemplo ===== */
 const PRODUCTS = [
-  { id: 'p1', name: 'Combo Gamer', price: 4000.00, category: 'Periféricos', images: ['./assets/images/images/products/product-4.png'], description: 'Combo completo para gamers iniciantes.' },
-  { id: 'p2', name: 'Smartband 4', price: 199.90, category: 'Wearables', images: ['./assets/images/images/exclusive.png'], description: 'Acompanhe sua atividade física.' },
-  { id: 'p3', name: 'Placa de Video', price: 349.90, category: 'Periféricos', images: ['./assets/images/images/products/product-5.png'], description: 'Som imersivo com microfone flexível.' },
-  { id: 'p4', name: 'Controle PS5', price: 899.00, category: 'Móveis', images: ['./assets/images/images/products/product-6.png'], description: 'Cadeira ergonômica para longas sessões.' },
-  { id: 'p5', name: 'Cadeira Gamer', price: 299.90, category: 'Periféricos', images: ['./assets/images/images/products/product-7.png'], description: 'Switches azuis, iluminação RGB.' },
+  { id: 'p1', name: 'Combo Gamer', price: 4000.00, category: 'Periféricos', images: ['./images/images/products/product-4.png'], description: 'Combo completo para gamers iniciantes.' },
+  { id: 'p2', name: 'Smartband 4', price: 199.90, category: 'Wearables', images: ['./images/images/exclusive.png'], description: 'Acompanhe sua atividade física.' },
+  { id: 'p3', name: 'Placa de Video', price: 349.90, category: 'Periféricos', images: ['./images/images/products/product-5.png'], description: 'Som imersivo com microfone flexível.' },
+  { id: 'p4', name: 'Controle PS5', price: 899.00, category: 'Móveis', images: ['./images/images/products/product-6.png'], description: 'Cadeira ergonômica para longas sessões.' },
+  { id: 'p5', name: 'Cadeira Gamer', price: 299.90, category: 'Periféricos', images: ['./images/images/products/product-7.png'], description: 'Switches azuis, iluminação RGB.' },
 ];
 
 /* ===== Classe Cart ===== */
