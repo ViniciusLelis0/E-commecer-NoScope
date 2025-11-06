@@ -1,6 +1,8 @@
 # NoScope E-commerce
 
-🔗 [Ver Projeto no GitHub](https://github.com/ViniciusLelis0/E-commecer-NoScope)
+🔗 [Ver Site](https://viniciuslelis0.github.io/E-commecer-NoScope/)
+
+🔗 [Repositório no GitHub](https://github.com/ViniciusLelis0/E-commecer-NoScope)
 
 ## Sobre o Projeto
 
@@ -56,11 +58,11 @@ cd E-commecer-NoScope
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 📞 Contato
+## Contato
 
-- Email: contato@noscope.com
+- Email: viniciuslelisaf@gmail.com
 - Website: www.noscope.com
-- Tel: (11) 9999-9999
+- Tel: (83) 98653-2907
 
 ---
 
