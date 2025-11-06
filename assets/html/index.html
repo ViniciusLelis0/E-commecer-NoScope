@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="NoScope - Sua loja de tecnologia e games. Encontre os melhores produtos gamers com os melhores preços!">
+  <meta name="keywords" content="games, tecnologia, periféricos, computador gamer">
+  <meta name="author" content="Vinicius Lelis e Maria Júlia">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://noscope.com/">
+  <meta property="og:title" content="NoScope - Loja de Tecnologia">
+  <meta property="og:description" content="Encontre os melhores produtos gamers com os melhores preços!">
+  <meta property="og:image" content="../images/images/logo-social.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://noscope.com/">
+  <meta property="twitter:title" content="NoScope - Loja de Tecnologia">
+  <meta property="twitter:description" content="Encontre os melhores produtos gamers com os melhores preços!">
+  <meta property="twitter:image" content="../images/images/logo-social.png">
+
+  <title>NoScope - Loja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="header-inner-content">
+      <h1 class="logo">No<span>Scope</span></h1>
+      <nav>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="contato.html">Contato</a>
+        </ul>
+      </nav>
+      <div class="nav-icon-contenier">
+        <button id="open-cart-btn" aria-haspopup="dialog" aria-controls="cartPanel" title="Abrir carrinho">
+          <img src="../images/images/cart.png" alt="Carrinho" />
+        </button>
+        <img src="../images/images/menu.png" class="menu-button" alt="Abrir menu" />
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner-content">
+      <div class="header-bottom-side">
+        <div class="header-bottom-side-left">
+          <h2>Dê um novo estilo ao seu trabalho</h2>
+          <p>Tudo o que você precisa em tecnologia, com o melhor preço e entrega rápida!</p>
+          <a href="produtos.html"><button class="btn-primary">Ver produtos &#8594;</button></a>
+        </div>
+        <div class="header-bottom-side-right">
+          <img src="../images/images/gaming-msi-header.png" alt="Banner de tecnologia" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MODAL DE PRODUTO -->
+  <div id="productModal" class="modal" aria-hidden="true" aria-modal="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Fechar">×</button>
+      <h2 id="modalTitle"></h2>
+      <div id="modalGallery" class="modal-gallery"></div>
+      <p id="modalDesc"></p>
+      <p><strong>Preço:</strong> <span id="modalPrice"></span></p>
+      <button id="addToCartFromModal" class="btn-primary">Adicionar ao carrinho</button>
+    </div>
+  </div>
+
+  <!-- PAINEL DO CARRINHO -->
+  <aside id="cartPanel" class="cart-panel" aria-hidden="true" role="dialog" aria-labelledby="cartTitle">
+    <h2 id="cartTitle">Carrinho</h2>
+    <div id="cartItems"></div>
+    <div class="cart-summary">
+      <p>Subtotal: <span id="cartSubtotal">R$ 0,00</span></p>
+      <button id="checkoutBtn" class="btn-primary">Ir para checkout</button>
+    </div>
+    <button id="close-cart" class="btn-secondary" aria-label="Fechar carrinho">Fechar</button>
+  </aside>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <!-- FOOTER -->
+  <footer class="gray-backgroud">
+    <div class="page-inner-content footer-content">
+      <div class="footer-section">
+        <h3>Sobre a Loja</h3>
+        <p>Tudo o que você precisa em tecnologia, com o melhor preço e entrega rápida!</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Ajuda e Suporte</h3>
+        <ul>
+          <li>FAQ</li>
+          <li>Trocas e Devoluções</li>
+          <li>Rastreamento de Pedidos</li>
+          <li>Central de Ajuda</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Minha Conta</h3>
+        <ul>
+          <li>Login</li>
+          <li>Meus Pedidos</li>
+          <li>Favoritos</li>
+          <li>Meus Dados</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <ul>
+          <li>Telefone: (11) 9999-9999</li>
+          <li>E-mail: contato@noscope.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="page-inner-content"/>
+    <div class="page-inner-content copyright">
+      <p>Copyright 2024 - Vinicius Lelis e Maria Júlia - Todos os Direitos Reservados</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/app.js"></script>
+</body>
+</html>

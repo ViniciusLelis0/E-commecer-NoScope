@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>NoScope - Produtos</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+ <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="header-inner-content">
+      <h1 class="logo">No<span>Scope</span></h1>
+      <nav>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="contato.html">Contato</a>
+        </ul>
+      </nav>
+      <div class="nav-icon-contenier">
+        <button id="open-cart-btn" aria-haspopup="dialog" aria-controls="cartPanel" title="Abrir carrinho">
+          <img src="../images/images/cart.png" alt="Carrinho" />
+        </button>
+        <img src="../images/images/menu.png" class="menu-button" alt="Abrir menu" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Catálogo -->
+  <main class="page-inner-content">
+    <section class="catalog-controls">
+      <div class="catalog-controls-row">
+        <input type="text" id="search" placeholder="Buscar produto...">
+        <select id="categoryFilter">
+          <option value="">Todas as categorias</option>
+        </select>
+        <select id="sort">
+          <option value="">Ordenar</option>
+          <option value="price-asc">Menor preço</option>
+          <option value="price-desc">Maior preço</option>
+          <option value="name-asc">Nome A-Z</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="catalog" class="cols cols-4">
+      <!-- Produtos renderizados pelo app.js -->
+    </section>
+  </main>
+
+  <!-- Modal de Produto -->
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p id="modalPrice"></p>
+      <div id="modalGallery" class="modal-gallery"></div>
+      <button id="addToCartFromModal" class="btn-primary">Adicionar ao carrinho</button>
+    </div>
+  </div>
+
+  <!-- Carrinho lateral -->
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true" tabindex="-1">
+    <button id="close-cart" class="btn-secondary">Fechar</button>
+    <h2>Seu carrinho</h2>
+    <div id="cartItems"></div>
+
+    <div class="cart-summary">
+      <p>Subtotal: <span id="cartSubtotal">R$ 0,00</span></p>
+
+      <!-- Checkout dentro do carrinho -->
+      <form id="checkoutForm" class="checkout">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" required placeholder="Digite seu CEP">
+        <small id="cepHelp" class="cep-help"></small>
+
+        <label for="street">Rua:</label>
+        <input type="text" id="street" readonly>
+
+        <label for="neighborhood">Bairro:</label>
+        <input type="text" id="neighborhood" readonly>
+
+        <label for="city">Cidade:</label>
+        <input type="text" id="city" readonly>
+
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" readonly>
+
+        <p>Frete: <span id="freteValue">R$ 0,00</span></p>
+        <p><strong>Total: <span id="cartTotal">R$ 0,00</span></strong></p>
+
+        <button type="submit" class="btn-primary">Finalizar Pedido</button>
+      </form>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div id="toast" class="toast"></div>
+
+  <!-- FOOTER -->
+  <footer class="gray-backgroud">
+    <div class="page-inner-content footer-content">
+      <div class="footer-section">
+        <h3>Sobre a Loja</h3>
+        <p>Tudo o que você precisa em tecnologia, com o melhor preço e entrega rápida!</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Ajuda e Suporte</h3>
+        <ul>
+          <li>FAQ</li>
+          <li>Trocas e Devoluções</li>
+          <li>Rastreamento de Pedidos</li>
+          <li>Central de Ajuda</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Minha Conta</h3>
+        <ul>
+          <li>Login</li>
+          <li>Meus Pedidos</li>
+          <li>Favoritos</li>
+          <li>Meus Dados</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <ul>
+          <li>Telefone: (11) 9999-9999</li>
+          <li>E-mail: contato@noscope.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="page-inner-content"/>
+    <div class="page-inner-content copyright">
+      <p>Copyright 2024 - Vinicius Lelis e Maria Júlia - Todos os Direitos Reservados</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="../js/app.js"></script>
+</body>
+</html>
